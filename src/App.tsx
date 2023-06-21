@@ -1,6 +1,6 @@
 import { Header } from "./component/header/Header";
-
 import { Route, Routes,} from "react-router-dom";
+import { About } from "./view/about/About";
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <Routes>
       <Route path = '/' element= {<h1> Welcome to the Motion Bank - Future Spirit!</h1>}>
       </Route>
-      <Route path = '/about' element= {<h1> Welcome to the Motion Bank - Future Spirit : About Page!</h1>}>
+      <Route path = '/about' element={<About/>}>
       </Route>
       <Route path = '/company' element= {<h1> Welcome to the Motion Bank - Future Spirit! : Company Page</h1>}>
       </Route>
