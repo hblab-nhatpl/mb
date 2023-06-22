@@ -1,0 +1,56 @@
+.title {
+    font-weight: 100;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+
+.form_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form {
+    display: block;
+    &_item {
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+        margin-bottom: 20px;
+    }
+}
+
+.email_inputs {
+    display: flex;
+    flex-direction: column;
+
+    input:first-child {
+        margin-bottom: 5px;
+    }
+}
+
+input,
+textarea {
+    width: 400px;
+    padding: 5px;
+    border: 1px solid black;
+    box-shadow: 1px 1px #CBCBCB;
+}
+
+label {
+    font-weight: bold;
+    text-align: start;
+}
+
+.footer {
+    margin-bottom: 50px;
+}

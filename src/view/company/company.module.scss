@@ -1,0 +1,42 @@
+table, tr, td{
+    border: 1px solid;
+    border-collapse:collapse;
+}
+
+.title {
+    font-weight: 100;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    text-align: center;
+ 
+}
+
+.item {
+    margin-bottom: 30px;
+}
+
+.sub_title {
+    margin-bottom: 10px;
+}
+
+table {
+    margin: auto;
+    td:first-child{
+       background-color: #EAEAEA;
+       padding: 0px 30px;
+    }
+
+    td:nth-child(2) {
+        text-align: start;
+        padding: 5px 200px 5px 5px;
+        background-color: #F7F7F7;
+    }
+}
+
+.info {
+    text-decoration:underline;
+    color: #72A9DF;
+}

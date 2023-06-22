@@ -4,17 +4,19 @@
     justify-content: space-between;
     align-items: center;
     background-color:#f0f2f5 ;
+    margin-bottom: 20px;
+    
+    &_logo {
+            width: 20px;
+            margin-left: 20px;
+    }
+
+    &_button {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 50px;
+        font-size: large;
+        font-weight: 100;
+    }
 }
 
-.header_logo {
-    width: 20px;
-    margin-left: 20px;
-}
-
-.header_button {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 50px;
-    font-size: large;
-    font-weight: 100;
-}
