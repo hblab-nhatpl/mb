@@ -1,18 +1,23 @@
 import { useNavigate } from "react-router-dom";
 import styles from './button.module.scss'
 
-interface IButton {
+interface IHeaderButton {
+    isActive: boolean,
     title: string,
-    navigateUrl: string,
+    navigateUrl: string | null,
+    onClick: (title: string) => void
 }
 
-export function HeaderButton(props: IButton) {
+export function HeaderButton(props: IHeaderButton) {
     const navigate = useNavigate();
-    const { title, navigateUrl } = props
+    const { isActive, title, navigateUrl, onClick: handleClick } = props;
     const onClick = () => {
-        navigate(navigateUrl);
+        handleClick(title);
+        if(navigateUrl){
+            navigate(navigateUrl);
+        }
     }
-    return <button onClick={onClick} className={styles.header_button}>
+    return <button onClick={onClick} className={`${styles.header_button} ${isActive ? styles.active : null}`}>
         {title}
     </button>
 }
